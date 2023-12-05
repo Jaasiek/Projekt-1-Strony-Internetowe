@@ -1,0 +1,114 @@
+div.content {
+  width: 100%;
+  min-height: 80vh;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: changeBackground 10s infinite;
+  animation-timing-function: linear;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url("assets/tło1.jpg");
+  }
+  20% {
+    background-image: url("assets/tło2.jpg");
+  }
+  40% {
+    background-image: url("assets/tło3.jpg");
+  }
+  60% {
+    background-image: url("assets/tło4.jpg");
+  }
+  100% {
+    background-image: url("assets/tło5.jpg");
+  }
+}
+
+div.content > h1 {
+  font-weight: bold;
+  margin: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+div.content > div.search {
+  width: auto;
+  height: 100%;
+  display: inline;
+  flex-direction: column;
+  border: 5px solid #eee;
+  border-radius: 25px;
+  flex-wrap: wrap;
+}
+
+div.content > div.search {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+div.content > div.search > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+div.content > div.search > div > button {
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+
+div.content > div.search > div > button:hover {
+  background-color: red;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+div.content > div.search > div > input {
+  border: 0.5px solid black;
+  border-radius: 25px;
+  text-align: center;
+  color: black;
+  width: 175px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.237);
+  text-transform: capitalize;
+}
+
+div.content > div.search > #firstline > input:nth-child(3) {
+  text-transform: uppercase;
+}
+
+div.content > div.search > div > input::placeholder {
+  color: black;
+}
+
+div.content > div.search > div > input:nth-child(3)::placeholder {
+  text-transform: capitalize;
+}
+
+div.content > div.search > div > input:focus {
+  outline: none;
+}

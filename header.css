@@ -1,0 +1,21 @@
+header > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  color: rgb(255, 77, 77);
+}
+
+header > img {
+  height: 40px;
+  width: auto;
+  margin: 10px;
+}
+
+header > ul > li:first-child {
+  font-weight: 1000;
+}
+
+header > ul > li:hover {
+  letter-spacing: 1.5px;
+  transition: 0.5s;
+}
