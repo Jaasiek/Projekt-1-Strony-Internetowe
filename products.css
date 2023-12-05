@@ -5,6 +5,7 @@ div.products:first-child {
 
 div.products > div > div:not(div.header) {
   border-radius: 25px;
+  transition: 0.4s;
 }
 
 div.products > div > div:not(div.header):hover {
@@ -20,6 +21,7 @@ div.products > div > div > button {
   background-color: #eee;
   padding: 10px;
   margin: 5px;
+  transition: 0.5s;
 }
 
 div.products > div > div > button:hover {

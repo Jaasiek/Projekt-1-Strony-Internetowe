@@ -75,6 +75,7 @@ div.content > div.search > div > button {
   font-weight: bold;
   font-size: 20px;
   padding: 10px;
+  transition: 0.3s;
 }
 
 div.content > div.search > div > button:hover {
