@@ -35,12 +35,6 @@ div.content > h1 {
   font-weight: bold;
   margin: 15px;
   color: white;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 25px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 7px;
-  padding-right: 7px;
 }
 
 div.content > div.search {
